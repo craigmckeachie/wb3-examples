@@ -8,11 +8,12 @@ public class ExceptionExample1 {
                 "Siddalee", "Pursalane", "Zephaniah"
         };
 
+
         try {
             String name = names[6];
             System.out.println(name);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
 
