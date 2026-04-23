@@ -11,11 +11,16 @@ public class FileReaderExample {
             FileReader fileReader = new FileReader("cream.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-            String line = bufferedReader.readLine();
+//            String line = bufferedReader.readLine();
+//            while (line != null) {
+//                System.out.println(line);
+//                line = bufferedReader.readLine();
+//            }
 
-            while (line != null) {
+            //OR
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);
-                line = bufferedReader.readLine();
             }
 
             bufferedReader.close();
