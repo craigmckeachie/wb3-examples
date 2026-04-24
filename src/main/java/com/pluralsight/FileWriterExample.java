@@ -10,7 +10,7 @@ public class FileWriterExample {
 
         try {
             // create a FileWriter
-            FileWriter fileWriter = new FileWriter("text.txt", true);
+            FileWriter fileWriter = new FileWriter("text.txt");
             // create a BufferedWriter
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             // write to the file
