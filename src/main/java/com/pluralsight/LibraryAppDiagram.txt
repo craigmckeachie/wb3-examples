@@ -1,0 +1,21 @@
+[CLASS: LibraryApp]
+   │
+   └── runMainScreen()  ◄───────────────────────────────────┐
+       │                                                    │
+       ├── (Command: 1) ──► runCatalogScreen()  ◄───────────┤ [LEVEL 2]
+       │                       │                            │
+       │                       ├── (Command: 1) ──► runBookSearchScreen()
+       │                       │                       │    [LEVEL 3]
+       │                       │                       └── (Command: B) ──┘
+       │                       │
+       │                       ├── (Command: A) ──► [Direct Action: Add Book]
+       │                       │
+       │                       └── (Command: R) ──► [Returns to runMainScreen]
+       │
+       ├── (Command: 2) ──► runMemberScreen()  ◄────────────┤ [LEVEL 2]
+       │                       │                            │
+       │                       ├── (Command: A) ──► [Direct Action: Add Member]
+       │                       │
+       │                       └── (Command: R) ──► [Returns to runMainScreen]
+       │
+       └── (Command: X) ──► [Exits Application]

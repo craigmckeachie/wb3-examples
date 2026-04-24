@@ -1,0 +1,13 @@
+[LEVEL 1: PARENT SCREEN]
+   │
+   ├── (Command: 1) ──► [LEVEL 2: CHILD SCREEN A] ───┐
+   │                       │                         │ (Deep Path)
+   │                       ├── (Command: 1) ──► [LEVEL 3: GRANDCHILD]
+   │                       │                       └─ (Command: B) ─► Back to A
+   │                       └── (Command: R) ──► Back to Parent
+   │
+   ├── (Command: 2) ──► [LEVEL 2: CHILD SCREEN B] ───┐
+   │                       │                         │ (Shallow Path)
+   │                       └── (Command: R) ──► Back to Parent
+   │
+   └── (Command: X) ──► [Exit Application]
